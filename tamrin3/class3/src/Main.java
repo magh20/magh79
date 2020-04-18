@@ -31,10 +31,10 @@ public class Main {
     }
     public static void condition() throws Exception
     {
-        if (person1.str==person2.str) {
-            System.out.println("persons information saved!");
-        } else {
+        if (person1.str.equals(person2.str)) {
             throw new Exception("information of person2 is equal to person1 !!!");
+        } else {
+            System.out.println("persons information saved!");
         }
     }
 }
