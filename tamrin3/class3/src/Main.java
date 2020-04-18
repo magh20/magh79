@@ -5,7 +5,6 @@ public class Main {
     public static Person person2 = new Person();
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-
         System.out.println("pls enter person1 name:");
         person1.name = input.nextLine();
         System.out.println("pls enter person1 family:");
