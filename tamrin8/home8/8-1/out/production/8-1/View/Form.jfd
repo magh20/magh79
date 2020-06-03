@@ -1,0 +1,93 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "1.8.0_202-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l:::p {comp nameField::::221:x, comp familyField::::221:x, comp melicodeField::::221:x, comp phonenumberField::::221:x, comp addressField::::221:x, comp ageField::::221:x, comp experienceField::::221:x, comp doneButton::l:p:112:p, comp skillField::l::221:x}, space ::181:x}}"
+			"$verticalGroup": "par l {seq l {space :p:40:p, comp nameField:::p::p, space :::p, comp familyField:::p::p, space :::p, comp melicodeField:::p::p, space :::p, comp phonenumberField:::p::p, space :::p, comp addressField:::p::p, space :::p, comp ageField:::p::p, space :::p, comp experienceField:::p::p, space :::p, comp skillField:::p::p, space :p:15:p, comp doneButton:::p::p, space ::205:x}}"
+		} ) {
+			name: "employmentForm"
+			"title": "employment form"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "nameField"
+				"text": "enter name"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "nameFieldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "familyField"
+				"text": "enter family"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "familyFieldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "melicodeField"
+				"text": "enter melicode"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "melicodeFieldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "phonenumberField"
+				"text": "enter phone number"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "phonenumberFieldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "addressField"
+				"text": "enter address"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "addressFieldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "ageField"
+				"text": "enter age"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "ageFieldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "experienceField"
+				"text": "enter exprience"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "experienceFieldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "doneButton"
+				"text": "done"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "doneButtonMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "skillField"
+				"text": "enter skill"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "skillFieldMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 410, 550 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp successText::::186:x, space :::p}, seq l {space :p:47:p, comp closeButton:::p:101:p, space ::50:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp successText:::p:117:p, space :::p, comp closeButton:::p::p, space ::15:x}}"
+		} ) {
+			name: "success"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "successText"
+				"text": "text"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "closeButton"
+				"text": "close"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "closeButtonMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 410, 0 )
+			"size": new java.awt.Dimension( 200, 200 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp faildText::::186:x, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp faildText::::156:x, space :::p}}"
+		} ) {
+			name: "faild"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "faildText"
+				"text": "text"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 410, 200 )
+			"size": new java.awt.Dimension( 200, 200 )
+		} )
+	}
+}

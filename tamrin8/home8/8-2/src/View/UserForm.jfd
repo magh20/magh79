@@ -1,0 +1,98 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "1.8.0_202-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {par l:::p {comp UsernameField::::196:x, comp PassField::::196:x}, comp okButton:::p:101:p}, space ::46:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp UsernameField:::p::p, space :::p, comp PassField:::p::p, space u:::p, comp okButton:::p::p, space ::57:x}}"
+		} ) {
+			name: "logFrame"
+			"title": "log"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "UsernameField"
+				"text": "enter username"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "UsernameFieldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "PassField"
+				"text": "enter pass"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "PassFieldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "okButton"
+				"text": "OK"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "okButtonMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 250, 185 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {par l:::p {comp nameField::::134:x, comp usernameField::::134:x, comp passField::::134:x, comp emailField::::134:x}, comp doneButton::l:p:71:p}, space ::128:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp nameField:::p::p, space :::p, comp usernameField:::p::p, space :::p, comp passField:::p::p, space :::p, comp emailField:::p::p, space s:::p, comp doneButton:::p::p, space ::56:x}}"
+		} ) {
+			name: "editFrame"
+			"title": "edit"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "nameField"
+				"text": "enter name"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "nameFieldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "usernameField"
+				"text": "enter username"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "usernameFieldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "passField"
+				"text": "enter pass"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "passFieldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "emailField"
+				"text": "enter email"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "emailFieldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "doneButton"
+				"text": "done"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "doneButtonMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 250, 0 )
+			"size": new java.awt.Dimension( 270, 250 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp faildText::::186:x, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp faildText::::71:x, space :::p}}"
+		} ) {
+			name: "faild"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "faildText"
+				"text": "text"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 520, 0 )
+			"size": new java.awt.Dimension( 200, 115 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp successText::::186:x, space :::p}, seq l {space :p:44:p, comp closeButton:::p:103:p, space ::51:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp successText:::p:61:p, space :::p, comp closeButton:::p::p, space :::x}}"
+		} ) {
+			name: "success"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "successText"
+				"text": "text"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "closeButton"
+				"text": "close"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "closeButtonMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 520, 115 )
+			"size": new java.awt.Dimension( 200, 135 )
+		} )
+	}
+}

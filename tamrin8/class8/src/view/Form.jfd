@@ -1,0 +1,127 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "1.8.0_202-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:50:p, par l:::p {comp fieldUser::::165:x, comp fieldPass::::165:x}}, seq l {space :p:87:p, comp enterButton:::p:87:p}}, space ::58:x}}"
+			"$verticalGroup": "par l {seq l {space :p:54:p, comp fieldUser:::p::p, space u:::p, comp fieldPass:::p::p, space s:::p, comp enterButton:::p::p, space ::82:x}}"
+		} ) {
+			name: "logFrame"
+			"title": "logging"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "fieldUser"
+				"text": "enter username"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "fieldUserMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "fieldPass"
+				"text": "enter pass"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "fieldPassMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "enterButton"
+				"text": "enter"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "enterButtonMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 470, 0 )
+			"size": new java.awt.Dimension( 275, 270 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :::p, comp faildText::::186:x, space :::p}}"
+			"$verticalGroup": "par l {seq t {space :::p, comp faildText::::81:x, space :::p}}"
+		} ) {
+			name: "faild"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "faildText"
+				"text": "text"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 745, 0 )
+			"size": new java.awt.Dimension( 200, 125 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::47:x, comp welcomeButton:::p:105:p, space :p:46:p}, seq l {space :::p, comp successText::::186:x, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp successText:::p:64:p, space :::p, comp welcomeButton:::p::p, space ::13:x}}"
+		} ) {
+			name: "success"
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "welcomeButton"
+				"text": "welcome"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "buttonWelcomeMouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "buttonWelcomeMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "successText"
+				"text": "text"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 745, 125 )
+			"size": new java.awt.Dimension( 200, 145 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:52:p, par l:::p {comp logButton::::129:x, comp registerButton::::129:x, comp scrollPane1::::129:x}, space ::42:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp scrollPane1:::p::p, space :p:29:p, comp logButton:::p::p, space :p:40:p, comp registerButton:::p::p, space ::91:x}}"
+		} ) {
+			name: "siteFrame"
+			"title": "main page"
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "logButton"
+				"text": "log"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "enterToSiteMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "registerButton"
+				"text": "register"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "registerMouseClicked", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "textPane1"
+					"text": "welcome to site."
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 0 )
+			"size": new java.awt.Dimension( 225, 270 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {comp passField::::226:x, comp usernameField::::226:x, comp nameField::::226:x, comp emailField::l::226:x}, space :::p}, seq t {space ::66:x, comp doneButton:::p:98:p, space :p:74:p}}"
+			"$verticalGroup": "par l {seq l {space :p:17:p, comp nameField:::p::p, space :::p, comp usernameField:::p::p, space :::p, comp passField:::p::p, space :::p, comp emailField:::p::p, space :p:41:p, comp doneButton:::p::p, space ::42:x}}"
+		} ) {
+			name: "registerFrame"
+			"title": "registering"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "nameField"
+				"text": "enter name"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "nameFieldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "usernameField"
+				"text": "enter username"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "usernameFieldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "passField"
+				"text": "enter pass"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "passFieldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "emailField"
+				"text": "enter email"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "emailFieldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "doneButton"
+				"text": "done"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "doneButtonMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 230, 0 )
+			"size": new java.awt.Dimension( 240, 270 )
+		} )
+	}
+}
