@@ -1,0 +1,104 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "1.8.0_202-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {par l:::p {comp nameField::::197:x, comp familyField::::197:x, comp melicodeField::::197:x}, comp okButton:::p:102:p}, space ::55:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp nameField:::p::p, space :::p, comp familyField:::p::p, space :::p, comp melicodeField:::p::p, space u:::p, comp okButton:::p::p, space ::57:x}}"
+		} ) {
+			name: "saveFrame"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "nameField"
+				"text": "enter name"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "nameFieldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "familyField"
+				"text": "enter family"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "familyFieldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "melicodeField"
+				"text": "enter melicode"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "melicodeFieldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "okButton"
+				"text": "OK"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "okMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 260, 215 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp faildText::t::198:x}"
+			"$verticalGroup": "par l {comp faildText::l::63:x}"
+		} ) {
+			name: "faild"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "faildText"
+				"text": "text"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 260, 0 )
+			"size": new java.awt.Dimension( 200, 95 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp successText::l::198:x, seq l {space :p:60:p, comp closeButton:::p:85:p, space ::53:x}}"
+			"$verticalGroup": "par l {seq l {comp successText:::p:53:p, space :::p, comp closeButton:::p::p, space :0:5:x}}"
+		} ) {
+			name: "success"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "successText"
+				"text": "text"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "closeButton"
+				"text": "close"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "closeButtonMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 260, 95 )
+			"size": new java.awt.Dimension( 200, 120 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:56:p, par l {comp showButton:::p:87:p, comp saveButton:::::x}, space ::70:x}}"
+			"$verticalGroup": "par l {seq l {space :p:33:p, comp saveButton:::p::p, space s:::p, comp showButton:::p::p, space ::59:x}}"
+		} ) {
+			name: "mainFrame"
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "saveButton"
+				"text": "save"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "saveButtonMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "showButton"
+				"text": "show"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "showButtonMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 460, 0 )
+			"size": new java.awt.Dimension( 215, 190 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp showText::l::198:x, seq l {space :p:62:p, comp doneButton:::p::p, space ::62:x}}"
+			"$verticalGroup": "par l {seq l {comp showText:::p:149:p, space :::p, comp doneButton:::p::p, space :0:4:x}}"
+		} ) {
+			name: "show"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "showText"
+				"text": "text"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "doneButton"
+				"text": "done"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "doneButtonMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 675, 0 )
+			"size": new java.awt.Dimension( 200, 215 )
+		} )
+	}
+}
